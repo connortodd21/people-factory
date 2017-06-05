@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+ <html class="no-js"> 
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,22 +8,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <h1> a Factory of People</h1>
+        <h1 id="myH1"> a Factory of People</h1>
 
         <section>
             <div>
-                <form>
+                <form id="personForm">
                     <p>
                         <label for="personName">Name</label>
                         <input type="text" name="personName">
                     </p>
+                        
+                     <p>   
+
+                        </p>   
 
                     <p>
-                        <button type="submit">Go</button>
-                        </p>
+                        <label for="homeTown">Where are you from </label>
+                        <input type="text" name="homeTown">
+                     </p>
+                     <p>
+                        <label for="color">What is your favorite color? </label>
+                        <input type="text" name="color">
+                     </p>
+                     <p>
+                         <button type="submit">Go</button>
+                      </p>
+
+                              <h2 id="myH2"> </h2>
+
                 </form>
             </div>
         </section>
+
         
         <script src="index.js"></script>
     </body>
