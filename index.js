@@ -7,20 +7,18 @@ function handleSubmit(ev) {
 
   const a = ev.target
   const home = a.homeTown.value
-
   const b = ev.target
   const color = b.color.value
-
   const ret = 'Hello ' + name + ' from ' + home + ' '
-
   document.querySelector('h1').textContent = ret
 
   const fin = 'SUCCESS'
-
   document.querySelector('h2').textContent = fin
 
-  var clr = 'yellow'
+  const yay = 'Nice Job!!!'
+  document.querySelector('marquee').textContent = yay
 
+  var clr = 'yellow'
   if(color === 'yellow'){
         clr = 'green'
   }
@@ -29,6 +27,10 @@ function handleSubmit(ev) {
   }
   
   document.getElementById('myH2').style.color = clr
+    document.getElementById('myH1').style.color = clr
+  document.getElementById('marquee').style.color = clr
+  document.getElementById('marquee').style.fontSize = 'xx-large'
+
   document.body.style.backgroundColor = color
 }
 
